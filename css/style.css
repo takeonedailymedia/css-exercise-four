@@ -4,23 +4,16 @@
 
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0 auto;
 }
 
 .container {
+  width: 100%;
   margin: 20px auto;
-  width: 80%;
   text-align: center;
   text-transform: uppercase;
-}
-
-div {
-  background-color: #dadada;
-  margin: 1%;
-  width: 100%;
-  padding: 20px 20px;
-  text-align: left;
-  text-transform: capitalize;
 }
 
 .baku {
@@ -39,42 +32,37 @@ div {
   background-image: url(../images/rome.jpg);
 }
 
-
-h1 {
-  font-family: sans-serif;
-  font-size: 2em;
-  margin: 2%;
-}
-
 .preview {
-  float: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  float: left;
+  height: 200px;
+  width: 100%;
+  margin: 10px;
+  text-transform: capitalize;
 }
 
-/* On mobile stacked */
+
+/* stacked */
 @media screen and (min-width: 575px) {
   .preview {
-  float: left;
   width: 100%;
   margin: 1%;
  }
 }
 
-/* On ipad to two columns */
-@media screen and (min-width: 991px) {
-  .preview {
-  width: 50%;
-  margin: 1%;
- }
+.container {
+  width: 100%;
+  margin: 10%;
 }
 
-/* On desktop to four columns */
-@media screen and (min-width: 1199px){
-   .preview {
-    width: 25%;
-    margin: 25%;
-  }
+@media screen and (min-width: 991px) {
+  .preview {
+  width: 25%;
+  margin: 1%;
+ }
+
+.container {
+  width: 25%;
+  margin: 10%;
 }
