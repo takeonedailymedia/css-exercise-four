@@ -6,63 +6,78 @@ body {
   background-color: #dadada;
   font-size: 16px;
   font-family: sans-serif;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .container {
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding-top: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .baku {
   background-image: url(../images/baku.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .london {
   background-image: url(../images/london.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .madrid {
   background-image: url(../images/madrid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rome {
   background-image: url(../images/rome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .preview {
-  background-repeat: no-repeat;
-  background-size: cover;
-  float: left;
   height: 200px;
   width: 100%;
   margin: 10px;
+  text-align: left;
+  text-indent: 10px;
   text-transform: capitalize;
 }
 
-
-/* stacked */
+/*ipad*/
 @media screen and (min-width: 575px) {
+  .container {
+    width: 90%;
+  }
+}
+
   .preview {
-  width: 100%;
-  margin: 1%;
- }
+    background-size: cover;
+    float: right;
+    height: 200px;
+    width: 45%;
+    margin: 2em 1%;
+  }
 }
 
-.container {
-  width: 100%;
-  margin: 10%;
-}
-
+/*desktop*/
 @media screen and (min-width: 991px) {
-  .preview {
-  width: 25%;
-  margin: 1%;
- }
+  .container {
+    width: 70%;
+  }
+}
 
-.container {
-  width: 25%;
-  margin: 10%;
+  .preview {
+    background-size: cover;
+    float: left;
+    height: 200px;
+    width: 23%;
+    margin: 2em 1%;
+  }
 }
