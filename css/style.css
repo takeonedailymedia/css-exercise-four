@@ -12,9 +12,10 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .baku {
@@ -45,8 +46,10 @@ body {
   height: 200px;
   width: 100%;
   margin: 10px;
+  margin-left: 0px;
+  padding-top: 30px;
   text-align: left;
-  text-indent: 10px;
+  text-indent: 30px;
   text-transform: capitalize;
 }
 
@@ -55,14 +58,13 @@ body {
   .container {
     width: 90%;
   }
-}
 
   .preview {
     background-size: cover;
     float: right;
     height: 200px;
     width: 45%;
-    margin: 2em 1%;
+    margin: .5em 1%;
   }
 }
 
@@ -71,7 +73,6 @@ body {
   .container {
     width: 70%;
   }
-}
 
   .preview {
     background-size: cover;
